@@ -1,0 +1,17 @@
+body {
+	padding-top: 0;
+}
+
+@media (max-width: 992px) {
+    [class*="col-md-x"] {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"], .form-control{ font-size: 16px; }
+}

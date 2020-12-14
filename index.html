@@ -21,33 +21,76 @@
 
 <body>
     <div class="container">
-        <div class="row justify-content-center">
-            <h1>Milk/Cream Fat Calculator</h1>
-            <p>Do you need a milk/cream with a fat percentage you don't have? You can use this calculator to mix different milk/creams to get a desired milk fat percentage. Example do you need Half and Half but only have 2% and whipping cream, this calculator will give you the amounts of each to mix together to get Half and Half. </p>
-
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Milk Fat Calculator</h1>
+                <p>Do you need a milk/cream with a fat percentage you don't have? You can use this calculator to mix different milk/creams to get a desired milk fat percentage. Example do you need Half and Half but only have 2% and whipping cream, this calculator will give you the amounts of each to mix together to get Half and Half. </p>
+            </div>
         </div>
         <form class="row g-3">
             <div class="col-md-12">
                 <h3>Desired Milk/Cream</h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3 col-md-x">
                 <label class="form-label">Desired Milk Fat %</label>
-                <input type="number" class="form-control milk-input" id="desiredMilkFat" aria-describedby="desiredMilkFat">
+                <select class="form-control" id="selectDesiredMilkFat">
+                    <option value="0.1">Skim Milk (0.1%)</option>
+                    <option value="1">1% Milk</option>
+                    <option value="2">2% Milk</option>
+                    <option value="3.25">Whole Milk (3.25%)</option>
+                    <option value="5">Light Cream (5%)</option>
+                    <option value="10">Half & Half Cream (10%)</option>
+                    <option value="18">Table Cream (18%)</option>
+                    <option value="35">Whipping Cream (35%)</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
+                <label class="form-label">&nbsp</label>
+                <input type="number" class="form-control" id="inputDesiredMilkFat" placeholder="Other" aria-describedby="desiredMilkFat">
+            </div>
+            <div class="col-md-6 col-md-x">
                 <label class="form-label">Desired Milk Volume</label>
-                <input type="number" class="form-control milk-input" id="desiredMilkVolume" aria-describedby="desiredMilkVolume">
+                <input type="number" class="form-control" id="inputDesiredMilkVolume" aria-describedby="desiredMilkVolume">
             </div>
             <div class="col-md-12">
                 <h3>Input Milk/Cream Fat %</h3>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3 col-md-x">
                 <label class="form-label">Input Milk 1 Fat %</label>
-                <input type="number" class="form-control milk-input" id="inputMilkFat1" aria-describedby="inputMilkFat1">
+                <select class="form-control" id="selectMilkFat1">
+                    <option value="0.1">Skim Milk (0.1%)</option>
+                    <option value="1">1% Milk</option>
+                    <option value="2">2% Milk</option>
+                    <option value="3.25">Whole Milk (3.25%)</option>
+                    <option value="5">Light Cream (5%)</option>
+                    <option value="10">Half & Half Cream (10%)</option>
+                    <option value="18">Table Cream (18%)</option>
+                    <option value="35">Whipping Cream (35%)</option>
+                    <option value="other">Other</option>
+                </select>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3">
+                <label class="form-label">&nbsp</label>
+                <input type="number" class="form-control" id="inputMilkFat1" placeholder="Other" aria-describedby="inputMilkFat1">
+            </div>
+            <div class="col-md-3 col-md-x">
                 <label class="form-label">Input Milk 2 Fat %</label>
-                <input type="number" class="form-control milk-input" id="inputMilkFat2" aria-describedby="inputMilkFat2">
+                <select class="form-control" id="selectMilkFat2">
+                    <option value="0.1">Skim Milk (0.1%)</option>
+                    <option value="1">1% Milk</option>
+                    <option value="2">2% Milk</option>
+                    <option value="3.25">Whole Milk (3.25%)</option>
+                    <option value="5">Light Cream (5%)</option>
+                    <option value="10">Half & Half Cream (10%)</option>
+                    <option value="18">Table Cream (18%)</option>
+                    <option value="35">Whipping Cream (35%)</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label class="form-label">&nbsp</label>
+                <input type="number" class="form-control" id="inputMilkFat2" placeholder="Other" aria-describedby="inputMilkFat2">
             </div>
             <div class="col-md-12">
                 <h3>Input Milk/Cream Volume</h3>
@@ -61,6 +104,12 @@
                 <input type="text" readonly class="form-control" id="inputMilkVolume2">
             </div>
         </form>
+    </div>
+    <div class="footer">
+        </br>
+        </br>
+        </br>
+        </br>
     </div>
     <!-- /container -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

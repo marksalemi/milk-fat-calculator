@@ -68,7 +68,7 @@ $("#selectMilkFat2").on("input", function() {
         $("#divMilkFat2").css('display', 'block');
         $("#inputMilkFat2").focus();
     } else {
-        $("#divMilkFat1").css('display', 'none');
+        $("#divMilkFat2").css('display', 'none');
         milkFat2 = parseFloat(milkFat2);
     }
 

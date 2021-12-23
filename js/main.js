@@ -11,8 +11,10 @@ $("#selectDesiredMilkFat").on("input", function() {
     $("#inputDesiredMilkFat").val("");
 
     if (desiredMilkFat == "other") {
+        $("#divDesiredMilkFat").css('display', 'block');
         $("#inputDesiredMilkFat").focus();
     } else {
+        $("#divDesiredMilkFat").css('display', 'none');
         desiredMilkFat = parseFloat(desiredMilkFat);
     }
 
@@ -40,8 +42,10 @@ $("#selectMilkFat1").on("input", function() {
     $("#inputMilkFat1").val("");
 
     if (milkFat1 == "other") {
+        $("#divMilkFat1").css('display', 'block');
         $("#inputMilkFat1").focus();
     } else {
+        $("#divMilkFat1").css('display', 'none');
         milkFat1 = parseFloat(milkFat1);
     }
 
@@ -61,8 +65,10 @@ $("#selectMilkFat2").on("input", function() {
     $("#inputMilkFat2").val("");
 
     if (milkFat2 == "other") {
+        $("#divMilkFat2").css('display', 'block');
         $("#inputMilkFat2").focus();
     } else {
+        $("#divMilkFat1").css('display', 'none');
         milkFat2 = parseFloat(milkFat2);
     }
 
